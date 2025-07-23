@@ -40,7 +40,7 @@ models = {
   'KNN': KNeighborsClassifier()
 }
 
-result = []
+results = []
 for name, model in models.items():
   model.fit(X_train_encoded, y_train)
   acc_train = accuracy_score(y_train, model.predict(X_train_encoded))
