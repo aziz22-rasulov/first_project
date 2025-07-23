@@ -47,8 +47,8 @@ for name, model in models.items():
   acc_test = accuracy_score(y_test, model.predict(X_test_encoded))
   results.append({
     'Model': name, 
-    'Train Accuracy: round(acc_train, 2)
-    'Test Accuracy: round(acc_test, 2)
+    'Train Accuracy': round(acc_train, 2)
+    'Test Accuracy': round(acc_test, 2)
   })
 
 st.write('### Сравнение моделей по точности')
